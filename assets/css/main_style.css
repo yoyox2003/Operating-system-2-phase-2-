@@ -87,3 +87,15 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+.input {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    margin-right: 10px;
+}
