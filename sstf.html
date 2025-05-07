@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Operating Systems Phase 2</title>
+        <link rel="stylesheet" href="assets/css/main_style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Operating Systems Phase 2</title>
-    <link rel="stylesheet" href="assets/css/main_style.css" />
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <h1>Operating Systems Project</h1>
-            <h2>Phase 2</h2>
-        </header>
-        <main>
-            <div class="input">
-                <input class="input" type="text" id="inputArray" placeholder="Enter comma-separated values (e.g., 12, 25, 30, 15)" />
-                <button class="btn" onclick="updateChart()">Submit</button>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Operating Systems Project</h1>
+                <h2>Phase 2</h2>
+            </header>
+            <main>
+                <div class="input">
+                    <input
+                        class="input"
+                        type="text"
+                        id="inputArray"
+                        placeholder="Enter comma-separated values (e.g., 12, 25, 30, 15)"
+                        value="98, 183, 41, 122, 14, 124, 65, 67"
+                    />
+                    <input
+                        class="input"
+                        type="number"
+                        id="initialHead"
+                        placeholder="Enter a number"
+                        value="53"
+                        style="width: 40px"
+                    />
+                    <button class="btn" onclick="updateChart()">Submit</button>
+                </div>
+                <div class="content">
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                </div>
+            </main>
+            <div class="button-container">
+                <a href="mainPage.html" class="btn">Back</a>
             </div>
-            <div class="content">
-                <canvas id="myChart" width="400" height="200"></canvas>
-            </div>
-        </main>
-        <div class="button-container">
-            <a href="mainPage.html" class="btn">Back</a>
+            <footer>
+                <p>
+                    Youssef Ahmed: 20223546 | NourEldeen Hatem: 20222912 | Ziad
+                    Amr: 20223538
+                </p>
+            </footer>
         </div>
-        <footer>
-            <p>
-                Youssef Ahmed: 20223546 | NourEldeen Hatem: 20222912 | Ziad
-                Amr: 20223538
-            </p>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/sstf.js"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/sstf.js"></script>
+    </body>
 </html>
