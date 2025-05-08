@@ -46,7 +46,7 @@ const chart = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: "Custom Plot with Input Values",
+                text: "Memory Request Handeling",
             },
         },
     },
@@ -80,6 +80,7 @@ function updateChart() {
 
         inputData.forEach((x, index) => {
             addPoint(x, index * 2);
+            console.log(`Handeling Request at (${x})`)
         });
 
         const minX = Math.min(...sortedUniqueXValues);
@@ -88,11 +89,11 @@ function updateChart() {
         const maxY = inputData.length * 2;
 
         chart.options.scales.x.min = minX;
-        chart.options.scales.x.max = maxX;
+        chart.options.scales.x.max = maxX + 2;
         chart.options.scales.y.min = minY;
-        chart.options.scales.y.max = maxY;
-
+        chart.options.scales.y.max = maxY + 2;   
         chart.update();
+        document.getElementById("resultDisplay").innerText = "Total Movements: " + result.totalMovement ;
     } else {
         alert("Please enter valid comma-separated numbers and initial head.");
     }

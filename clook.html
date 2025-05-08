@@ -19,16 +19,14 @@
                         class="input"
                         type="text"
                         id="inputArray"
-                        placeholder="Enter comma-separated values (e.g., 12, 25, 30, 15)"
-                        value="98, 183, 41, 122, 14, 124, 65, 67"
+                        placeholder="Enter Requests (comma-separated)"
                     />
                     <input
                         class="input"
                         type="number"
                         id="initialHead"
-                        placeholder="Enter a number"
-                        value="53"
-                        style="width: 40px"
+                        placeholder="Start"
+                        style="width: 60px; height: 40px;"
                     />
                     <button class="btn" onclick="updateChart()">Submit</button>
                 </div>
@@ -36,6 +34,7 @@
                     <canvas id="myChart" width="400" height="200"></canvas>
                 </div>
             </main>
+            <p id="resultDisplay" class="input">Result will appear here.</p>
             <div class="button-container">
                 <a href="mainPage.html" class="btn">Back</a>
             </div>
